@@ -137,7 +137,7 @@
  *    	    28Nov01  RMS  MACRO1 released w/ simtools
  *    	     5Mar03  DP   MACRO1 released w/ ddt1
  *    	    2003     PLB  major reworking, assembles MACRO, DDT
- *    v4.0b 7Apr25  PEA  Add PDP-1D instructions
+ *    v4.0b1  7Apr25  PEA  Add PDP-1D instructions
 */
 
 
