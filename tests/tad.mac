@@ -1,0 +1,27 @@
+DTEST
+
+/ Test to see if the instruction(s) were implemented correctly
+
+100/
+
+go,	cla	/ Clear ac
+	lac b	/ Load b
+	cma	/ Complemement ac
+	dac c	/ Deposit into c
+	cla	/ Clear ac
+	lac a	/ Load a
+	tad c	/ Use two's complement to add a and c
+	dac d	/ Deposit d
+
+out,	lio d	/ Load d into IO
+	tyo	/ And type it out
+
+end,	hlt	/ Terminate
+
+a,	4
+b,	-1
+c,	0
+d,	0
+
+start go
+

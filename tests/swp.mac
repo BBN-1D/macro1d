@@ -1,0 +1,28 @@
+TSWP
+
+/ Test swp
+
+100/
+
+go,	cla
+	sci
+	lac a
+	lio b
+	tyo
+	lio cr
+	tyo
+	lac a
+	lio b
+	swp
+	tyo
+	lio cr
+	tyo
+
+end,	hlt
+
+a,	1
+b,	7
+cr,	277
+
+start go
+

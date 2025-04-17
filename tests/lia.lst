@@ -1,0 +1,21 @@
+
+      TLIA                                                                Page 1
+
+
+    1                   TLIA
+    2                   
+    3                   / Test LIA
+    4                   
+    5 00100             100/
+    6                   
+    7 00100 740200      a,	sci
+    8 00101 200104      	lac b
+    9 00102 760020      	lia
+   10 00103 760400      end,	hlt
+   11                   
+   12 00104 000102      b,	102
+   13                   
+   14       000100      start a
+   15                   
+
+      No errors detected

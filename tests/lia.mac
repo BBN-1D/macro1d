@@ -1,0 +1,15 @@
+TLIA
+
+/ Test LIA
+
+100/
+
+go,	sci
+	lac b
+	lia
+end,	hlt
+
+b,	102
+
+start go
+
