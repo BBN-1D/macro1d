@@ -8,10 +8,13 @@ CC=gcc
 $(TOOL): $(TOOL).c
 	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o $(TOOL) $(TOOL).c $(LDLIBS)
 
-.PHONY: clean install uninstall
+.PHONY: clean check install uninstall
 
 clean:
 	rm -f $(TOOL)
+
+check:	$(TOOL)
+	./tests/check.sh
 
 install: $(TOOL)
 	$(INSTALL) -p -m u=rx,g=rx,o=rx $(TOOL) $(BIN)
