@@ -1,0 +1,33 @@
+
+      DTEST                                                               Page 1
+
+
+    1                   DTEST
+    2                   
+    3                   / Test to see if the instruction(s) were implemented correctly
+    4                   
+    5 00100             100/
+    6                   
+    7 00100 760200      go,	cla	/ Clear ac
+    8 00101 200114      	lac b	/ Load b
+    9 00102 761000      	cma	/ Complemement ac
+   10 00103 240115      	dac c	/ Deposit into c
+   11 00104 760200      	cla	/ Clear ac
+   12 00105 200113      	lac a	/ Load a
+   13 00106 360115      	tad c	/ Use two's complement to add a and c
+   14 00107 240116      	dac d	/ Deposit d
+   15                   
+   16 00110 220116      out,	lio d	/ Load d into IO
+   17 00111 730003      	tyo	/ And type it out
+   18                   
+   19 00112 760400      end,	hlt	/ Terminate
+   20                   
+   21 00113 000004      a,	4
+   22 00114 777776      b,	-1
+   23 00115 000000      c,	0
+   24 00116 000000      d,	0
+   25                   
+   26       000100      start go
+   27                   
+
+      No errors detected
