@@ -1,2 +1,4 @@
 macro1d
 *~
+tests/*.log
+
